@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  --primary: #1c1c1c;
+  --primary-white: #383838;
+  --secondary: #efefef;
+  --show: #c4913e;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #383838;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #c4913e;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
