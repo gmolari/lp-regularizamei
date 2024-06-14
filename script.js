@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     new Glide('.glide', {
         type: 'carousel',
         focusAt: 'center',
-        perView: 3,
+        perView: 2,
         breakpoints: {
             940: {
                 perView: 2
