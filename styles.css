@@ -159,6 +159,19 @@ header ul a {
   background-color: var(--secondary);
 }
 
+.container-start .image-coin {
+  width: 40%;
+  max-width: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.container-start .image-coin img {
+  width: 100%;
+  display: flex;
+}
+
 .section-01 .container-title {
   margin-left: 10dvw;
 }
@@ -395,11 +408,14 @@ ul.glide__slides {
 .section-07 .container-questions .image-check {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  background: var(--blue);
   position: absolute;
   right: -50px;
-  top: -120px;
+  top: -100px;
+  transform: rotate(25deg);
+}
+
+.section-07 .container-questions .image-check img {
+  width: 100%;
 }
 
 @media screen and (max-width: 760px) {
