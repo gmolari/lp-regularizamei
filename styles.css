@@ -324,6 +324,12 @@ main section.section-03 {
   margin-bottom: 1rem;
 }
 
+.why-item{
+  margin-top: 3rem;
+  text-align: center;
+  
+}
+
 /* *** SECTION 06 *** */
 .section-06 {
   background: var(--blue);
@@ -338,6 +344,22 @@ section.section-06 div.container-title h3 {
 .section-06 .title-image {
   display: flex;
   justify-content: space-between;
+}
+
+.section-06 img{
+  width: 220px;
+  height: 220px;
+}
+
+.section-06 .image {
+  position: absolute;
+  right: 200px;
+  transform: rotate(30deg);
+  
+}
+
+.section-06 .container-title .image img {
+  width: 100%;
 }
 
 .container-slides {
