@@ -201,25 +201,24 @@ header ul a {
 .section-02 {
   padding: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.link-item {
+.section-02 a {
   display: flex;
   flex: 1;
   background: var(--blue);
   min-width: 150px;
+  text-align: center;
 }
 
-.link-item:nth-of-type(even) {
+.section-02 a:nth-of-type(even) {
   background: var(--black-blue);
 }
 
-.link-item .main-svg {
-  flex: 1;
-}
-
-.link-item a {
+.section-02 a {
   flex: 3;
   font-size: 1.3rem;
   display: flex;
@@ -342,20 +341,16 @@ section.section-06 div.container-title h3 {
 }
 
 .section-06 .title-image {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
 .section-06 img{
-  width: 220px;
-  height: 220px;
-}
-
-.section-06 .image {
   position: absolute;
-  right: 200px;
-  transform: rotate(30deg);
-  
+  max-width: 150px;
+  right: 20%;
+  bottom: -1rem;
 }
 
 .section-06 .container-title .image img {
