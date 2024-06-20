@@ -522,8 +522,8 @@ section.section-06 div.container-title h3 {
 }
 
 .container-slides .glide__slide {
-  border: 1px solid rgba(202, 234, 253, 0.226);
-  background: #4283e636;
+  border-right: 2px solid rgba(255, 255, 255, 0.342);
+  background: #0d3674;
   flex: 1;
   padding: 1rem;
   transition: 0.2s;
@@ -537,6 +537,12 @@ section.section-06 div.container-title h3 {
 ul.glide__slides {
   padding: 0.5rem 0;
   align-items: center;
+}
+
+.glide-arrows{
+  position: relative;
+  right: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 640px) {
