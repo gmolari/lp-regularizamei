@@ -373,6 +373,11 @@ main section.section-03 {
   flex-wrap: wrap;
 }
 
+.section-04 img {
+  max-height: 300px;
+  width: auto;
+}
+
 .container-about-main .container-title {
   align-items: center;
   flex: 1;
