@@ -156,23 +156,64 @@ header ul a {
   cursor: pointer;
 }
 
+@keyframes ascending {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes descending {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+.ascending {
+  animation: ascending .2s;
+}
+
+.descending {
+  animation: descending .2s;
+}
+
+
 /* Media Query para Responsividade */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
     align-items: center;
+    padding: 1rem;
+    position: relative;
+    will-change: height;
   }
 
   header ul {
+    display: none;
     flex-direction: column;
     gap: 2rem;
     width: 100%;
     align-items: center;
     padding: 0;
+    position: absolute;
+    top: 86%;
+    width: 100vw;
+    left: 0;
+    padding-bottom: 1rem;
+    transform-origin: top;
+    background-color: var(--primary);
   }
 
   header ul a {
     text-align: center;
+  }
+
+  .menu-icon {
+    display: flex;
   }
 }
 
