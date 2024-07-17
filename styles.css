@@ -256,7 +256,7 @@ header ul a {
   color: var(--blue);
 }
 
-.section-01 .container-title span {
+span{
   color: var(--orange);
 }
 
@@ -539,11 +539,45 @@ ul.glide__slides {
   align-items: center;
 }
 
-.glide-arrows{
-  position: relative;
-  right: 0;
-  left: 0;
+.glide-arrow{
+  display: flex;
+  justify-content: center;
 }
+
+.glide__arrow{
+  position: absolute;
+  background-color: var(--primary-white);
+  border: none;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+.glide__arrow--right{
+  right: 45%;
+}
+
+.glide__arrow--left{
+  right: 50%;
+}
+
+.glide__arrow:hover{
+  cursor: pointer;
+  transform: scale(1.10);
+  border-radius: 10px;
+}
+
+.inform{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.inform-mobile{
+  display: none;
+}
+
 
 @media screen and (max-width: 640px) {
   .container-slides .glide__slide {
@@ -563,6 +597,18 @@ ul.glide__slides {
 
   .container-slides .glide__slide:hover {
     transform: scale(1);
+  }
+
+  .inform{
+    display: none;
+    margin: 0;
+  }
+
+  .inform-mobile{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
   }
 }
 
