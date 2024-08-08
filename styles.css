@@ -190,6 +190,7 @@ header ul a {
     padding: 1rem;
     position: relative;
     will-change: height;
+    height: auto;
   }
 
   header ul {
